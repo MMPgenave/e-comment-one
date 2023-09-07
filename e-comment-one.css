@@ -1,0 +1,89 @@
+.e-comment-one {
+  width: 100%;
+  height: 300px;
+}
+.e-comment-one form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1.5rem;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.e-comment-one form textarea {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+  border: 1px solid rgba(221, 223, 226, 0.5);
+  background: #fff;
+  box-shadow: 0px 6px 25px 0px rgba(187, 187, 187, 0.25);
+  color: rgba(58, 58, 58, 0.5);
+  text-align: left;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  background-color: white;
+  resize: none;
+  padding-top: 25px;
+}
+
+.e-comment-one form > div {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.e-comment-one form > div > p {
+  /* display: none; */
+}
+.e-comment-one form > div > .star_rating {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 6px 25px 0px rgba(187, 187, 187, 0.25);
+  gap: 5px;
+}
+.e-comment-one form > div > .star_rating > div {
+  content: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15 3.75C12.4548 3.75 12.2142 8.18315 10.6989 9.74947C9.18361 11.3158 4.47275 9.5249 3.81823 12.305C3.16509 15.0866 7.40294 16.0304 7.92545 18.4168C8.45071 20.8032 5.86153 24.1562 8.07396 25.8248C10.2864 27.492 12.6679 23.7184 15 23.7184C17.332 23.7184 19.7136 27.492 21.926 25.8248C24.1384 24.1562 21.5506 20.8032 22.0745 18.4168C22.5984 16.0304 26.8349 15.0866 26.1817 12.305C25.5286 9.5249 20.8164 11.3158 19.3025 9.74947C17.7872 8.18315 17.5452 3.75 15 3.75Z' stroke='%23DCB051' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.e-comment-one form > div > .star_rating > div.active {
+  content: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15 3.75C12.4548 3.75 12.2142 8.18315 10.6989 9.74947C9.18361 11.3158 4.47275 9.5249 3.81823 12.305C3.16509 15.0866 7.40294 16.0304 7.92545 18.4168C8.45072 20.8032 5.86153 24.1562 8.07396 25.8248C10.2864 27.492 12.6679 23.7184 15 23.7184C17.332 23.7184 19.7136 27.492 21.926 25.8248C24.1385 24.1562 21.5506 20.8032 22.0745 18.4168C22.5984 16.0304 26.8349 15.0866 26.1817 12.305C25.5286 9.5249 20.8164 11.3158 19.3025 9.74947C17.7872 8.18315 17.5452 3.75 15 3.75Z' fill='%23DCB051' stroke='%23DCB051' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+
+.e-comment-one form > div > button {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid #dcb051;
+  background: rgba(220, 176, 81, 0.08);
+  box-shadow: 0px 6px 25px 0px rgba(187, 187, 187, 0.25);
+  color: #dcb051;
+  text-align: right;
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+/* Responsive Style */
+@media only screen and (max-width: 768px) {
+  .e-comment-one form > div > .star_rating {
+    gap: 5px;
+  }
+}
+
+[dir="rtl"] .e-comment-one form textarea {
+  text-align: right;
+}

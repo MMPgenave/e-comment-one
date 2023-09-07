@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e-comment-one</title>
+    <link rel="stylesheet" href="./e-comment-one.css" />
+  </head>
+  <body dir="rtl">
+    <div class="e-comment-one">
+      <form>
+        <textarea name="comments" id="e-comment-one">
+        نظر خود را اینجا وارد کنید...
+        </textarea>
+
+        <div>
+          <div class="star_rating">
+            <div onmouseover="starMousedOver(0)" onclick="starClicked(0)"></div>
+            <div onmouseover="starMousedOver(1)" onclick="starClicked(1)"></div>
+            <div onmouseover="starMousedOver(2)" onclick="starClicked(2)"></div>
+            <div onmouseover="starMousedOver(3)" onclick="starClicked(3)"></div>
+            <div onmouseover="starMousedOver(4)" onclick="starClicked(4)"></div>
+          </div>
+
+          <!-- input that holds number of shined star by the user -->
+          <!-- <p id="holder"></p> -->
+          <input id="holder" type="number"  />
+          <button type="submit">ثبت نظر</button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
